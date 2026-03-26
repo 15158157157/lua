@@ -2,4 +2,3 @@ local weapon = require(game:GetService("Players").LocalPlayer.PlayerScripts.Weap
 
 weapon.decrementAmmo = function() end
 weapon.decrementStoredAmmo = function() end
-weapon.incrementAmmo = function() end
