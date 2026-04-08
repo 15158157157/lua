@@ -1,4 +1,4 @@
-local lp = game.Players.LocalPlayer
+local LocalPlayer = game.Players.LocalPlayer
 
 local function recoil(char)
     char.AttributeChanged:Connect(function(attr)
@@ -8,5 +8,5 @@ local function recoil(char)
     end)
 end
 
-recoil(lp.Character or lp.CharacterAdded:Wait())
-lp.CharacterAdded:Connect(recoil)
+recoil(LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait())
+LocalPlayer.CharacterAdded:Connect(recoil)
